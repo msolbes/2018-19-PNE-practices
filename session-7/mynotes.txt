@@ -1,0 +1,37 @@
+Here you will take your notes
+
+client-server model
+
+The client starts the communication. Sends a request to the server and waits for a response.
+The client always needs a server
+
+
+The server doesn't need a client
+The IP address of my phone at URJC is 10.3.52.187
+The IP address of my teacher's phone at URJC is 10.3.52.118
+
+The IP address of my computer is 212.128.253.72
+(terminal: ifconfig; inet)
+
+The IP address of my teacher's  computer is 212.128.253.64
+
+
+ping 8.8.8.8
+ime=3.25 ms
+
+ping 212.128.253.72
+time=0.060 ms
+
+ping 212.128.253.73
+time=0.344 ms
+
+ping 10.3.52.118
+64 bytes from 10.3.52.118: icmp_seq=1 ttl=63 time=5.01 ms
+
+ping www.google.com
+PING www.google.com (216.58.211.228)
+time=3.50 ms
+
+
+ping www.urjc.es
+212.128.240.50THIS IS A TEXT EXAMPLE FIR ADDUBG TO MY FILETHIS IS A TEXT EXAMPLE FIR ADDUBG TO MY FILE
