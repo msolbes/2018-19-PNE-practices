@@ -35,3 +35,40 @@ time=3.50 ms
 
 ping www.urjc.es
 212.128.240.50THIS IS A TEXT EXAMPLE FIR ADDUBG TO MY FILETHIS IS A TEXT EXAMPLE FIR ADDUBG TO MY FILE
+
+
+
+
+
+
+
+
+
+
+
+PRACTICE 2:
+
+S1(Seq)
+S2 = S1.reverse
+S3 = S2.complement()
+S3.strbase -> Server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

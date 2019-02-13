@@ -7,8 +7,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 print("Socket created")
 
-PORT = 8080
-IP = "212.128.253.64"
+PORT = 1234
+IP = "212.128.253.70"
 
 # Connect to the server
 s.connect((IP, PORT))
