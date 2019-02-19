@@ -10,6 +10,7 @@ def process_client(cs):
 
     print("Message from the client: {}". format(msg))
 
+
     # Sending the message back to the client
     # (because we at¡re an echo server)
     cs.send(str.encode(msg))
