@@ -20,7 +20,6 @@ def process_client(cs):
     # Close the socket
     cs.close()
 
-
 # MAIN PROGRAM
 
 # create an INET, STREAMing socket

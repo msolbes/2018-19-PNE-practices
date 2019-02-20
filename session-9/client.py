@@ -29,7 +29,5 @@ while condition:
         termcolor.cprint("Request message: {}".format(msg), "red")
         # Print the server's response
         termcolor.cprint("Request message: {}".format(response), "cyan")
-
         s.close()
-
 
