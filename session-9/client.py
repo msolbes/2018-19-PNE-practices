@@ -31,3 +31,4 @@ while condition:
         termcolor.cprint("Request message: {}".format(response), "cyan")
         s.close()
 
+
