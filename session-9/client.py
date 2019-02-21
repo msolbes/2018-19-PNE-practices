@@ -1,12 +1,15 @@
 import socket
+import termcolor
 # SERVER IP, PORT
-PORT = 8081
-IP = "212.128.253.72"
+IP = "212.128.253.70"
+PORT = 8088
 
-while True:
 
-    # Before connecting to the server, ask the user for the string
-    msg = input("> ")
+condition= True
+while condition:
+
+# Before connecting to the server, ask the user for the string
+    msg = input("> ").lower()
 
 
     # Now we can create the socket and connect to the servewr
@@ -20,8 +23,12 @@ while True:
 
     # Receive the servers respoinse
     response = s.recv(2048).decode()
+    if msg == "EXIT":
+        condition =False
+    else:
+        termcolor.cprint("Request message: {}".format(msg), "red")
+        # Print the server's response
+        termcolor.cprint("Request message: {}".format(response), "cyan")
+        s.close()
 
-    # Print the server's response
-    print("Response: {}".format(response))
 
-    s.close()

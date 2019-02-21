@@ -1,7 +1,6 @@
 import socket
 
-
-PORT = 8088
+PORT = 8087
 IP = "212.128.253.70"
 MAX_OPEN_REQUESTS = 5
 
@@ -9,16 +8,21 @@ MAX_OPEN_REQUESTS = 5
 def process_client(cs):
     """Process the client request.
     Parameters:  cs: socket for communicating with the client"""
+    if msg == "EXIT":
+        cs.close()
+    else:
+        # Read client message. Decode it as a string
+        msg = cs.recv(2048).decode("utf-8")
 
-    # Read client message. Decode it as a string
-    msg = cs.recv(2048).decode("utf-8")
-    # Print the received message, for debugging
+        # Print the received message, for debugging
+        termcolor.cprint(msg, "red")
 
-    # Send the msg back to the client (echo)
-    cs.send(str.encode(msg))
+        # Send the msg back to the client (echo)
+        cs.send(str.encode(msg))
 
-    # Close the socket
-    cs.close()
+        # Close the socket
+        cs.close()
+
 
 # MAIN PROGRAM
 
@@ -44,5 +48,4 @@ while True:
     print("Attending connections from client: {}".format(address))
 
     # Service the client
-    process_client(clientsocket)
-
+    process_client(cli
