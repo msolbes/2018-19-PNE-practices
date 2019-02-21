@@ -1,3 +1,4 @@
+# Counting the number of letters in the sequence
 sequence = input("Please introduce a valid DNA sequence: ").upper()
 
 print("The total length of the quence is: ", len(sequence))
