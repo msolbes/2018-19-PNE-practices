@@ -1,16 +1,16 @@
 from Bases import count_let
 
-#Main program
+# Main program
 s = input("please enter the sequence: ").upper()
 n_let = count_let(s)
 print("The letters of the sequence are: {}".format(n_let))
 
-#Calculate the total sequence length
+# Calculate the total sequence length
 tl = len(s)
 
-#Calculate the percentage of As in the sequence
+# Calculate the percentage of As in the sequence
 if tl > 0:
-    perc_a = round(100.0 * n_let['As'] /tl, 1)
+    perc_a = round(100.0 * n_let['As'] / tl, 1)
     perc_c = round(100.0 * n_let['Cs'] / tl, 1)
     perc_g = round(100.0 * n_let['Gs'] / tl, 1)
     perc_t = round(100.0 * n_let['Ts'] / tl, 1)

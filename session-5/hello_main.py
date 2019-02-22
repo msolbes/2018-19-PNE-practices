@@ -1,5 +1,5 @@
-from Hello import hello
+from Hello import hi
 
 print("Hello form the main program")
-hello()
+hi()
 print("bye bye")
