@@ -1,8 +1,9 @@
+# Learning to count the letters in a sequence from a file
 f = open("dna.txt", "r")
 seq = f.read()
 f.close()
 
-seq = seq.replace("\n","").replace(" ","")
+seq = seq.replace("\n", "").replace(" ", "")
 total_lenght = len(seq)
 
 num_A = seq.count("A")

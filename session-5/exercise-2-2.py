@@ -1,16 +1,16 @@
 from Bases import count_let
 
-#Main program
+# Main program
 s1 = input("please enter the sequence: ").upper()
 s2 = input("please enter the second sequence: ").upper()
 n1_let = count_let(s1)
 n2_let = count_let(s2)
 print("The letters of the sequence 1 are: {}".format(n1_let))
 print("The letters of the sequence 2 are: {}".format(n2_let))
-#Calculate the total sequence length
+# Calculate the total sequence length
 tl1 = len(s1)
 tl2 = len(s2)
-#Calculate the percentage of As in the sequence
+# Calculate the percentage of As in the sequence
 if (tl1 and tl2) > 0:
     perc_a1 = round(100.0 * n1_let['As'] / tl1, 1)
     perc_c1 = round(100.0 * n1_let['Cs'] / tl1, 1)
