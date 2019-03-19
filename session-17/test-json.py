@@ -27,8 +27,6 @@ for i, num in enumerate(person["phoneNumber1"]):
     print(num['number'])
 
 
-
-
 termcolor.cprint("Name: ", 'green', end='')
 print(person['Firstname2'], person['Lastname2'])
 termcolor.cprint("Age: ", 'yellow', end='')
