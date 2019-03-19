@@ -1,0 +1,56 @@
+{
+  "Person1": [
+    {
+      "Firstname1": "Chandler"
+    },
+    {
+      "Lastname1": "Bing"
+    },
+    {
+      "Age1": 26
+    },
+    {   "phoneNumber1": [
+       {
+        "number": "1234-1221", "type": "home"
+       },
+       {
+        "number": "2134-1221", "type": "office"
+       }
+     ]
+},
+    {
+  "Person2": [
+    {
+      "Firstname2": "Joey"
+    },
+    {
+      "Lastname1": "Tribbiani"
+    },
+    {
+      "Age1": 25
+    },
+    {   "phoneNumber1": [
+       {
+        "number": "1234-1221", "type": "home"
+       }
+     ]
+},
+
+
+{
+    "Firstname2": "Joey",
+    "Lastname2": "Tribbiani",
+    "age2": 25,
+    "phoneNumber2": [
+    {"number": "2345-2332", "type": "home"}
+    ]
+},
+{
+    "Firstname3": "Ross",
+    "Lastname3": "Geller",
+    "age3": 26,
+    "phoneNumber3": [
+      {"number": "3456-3443", "type": "home"},
+      {"number": "4256-3443", "type" : "mobile"}
+    ]
+}
