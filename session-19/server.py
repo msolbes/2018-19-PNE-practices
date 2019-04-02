@@ -26,6 +26,7 @@ conn.request(METHOD, ENDPOINT, None, headers)
 # -- Wait for the server's response
 r1 = conn.getresponse()
 
+
 # -- Print the status
 print()
 print("Response received: ", end='')
@@ -35,6 +36,7 @@ print(r1.status, r1.reason)
 # -- the connection
 text_json = r1.read().decode("utf-8")
 conn.close()
+
 
 # -- Optionally you can print the
 # -- received json file for testing
