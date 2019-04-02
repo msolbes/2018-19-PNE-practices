@@ -32,6 +32,7 @@ print(r1.status, r1.reason)
 
 # -- Read the response's body and close
 # -- the connection
+
 text_json = r1.read().decode("utf-8")
 conn.close()
 
@@ -40,6 +41,7 @@ conn.close()
 # print(text_json)
 
 # -- Generate the object from the json file
+
 user = json.loads(text_json)
 
 # -- Get some data
