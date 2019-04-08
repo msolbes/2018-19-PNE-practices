@@ -1,16 +1,26 @@
-# Fibonacci sequence and adding
-def fibo(n):
-    if n < 2:
-        return 1
+# Learning the fibonacci sequence and adding its terms
+nterms = int(input("How many terms would you like?: "))
+
+
+def fibonacci(term):
+    n1 = 0
+    n2 = 1
+    list_terms = []
+    if nterms <= 0:
+        print("Please enter a positive number")
+    elif nterms == 1:
+        print(n1)
     else:
-        return fibo(n - 1) + fibo(n - 2)
+        print("Fibonacci sequence with", nterms, ":")
+        for i in range(term):
+            list_terms.append(n1)
+            n1 = n2
+            n2 = n1+n2
+        add = 0
+        for i in list_terms:
+            add = add + i
+        return add
 
 
-num = int(input("Introduce the term you wish: "))
-add = 0
-for i in range(0, num):
-    r = fibo(i)
-    add += r
-    print(r)
-
-print("The total addition is:", add)
+fib_series = fibonacci(nterms)
+print('The final series is: ', fib_series)
