@@ -20,5 +20,4 @@ def fibonacci(term):
 
 
 fib_series = fibonacci(nterms)
-
 print('The final series is: ', fib_series)
