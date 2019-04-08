@@ -1,3 +1,4 @@
+# Just printing the sum of the first 100 numbers
 print("Printing the sum of the first 100 numbers")
 total_sum = 0
 
