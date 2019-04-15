@@ -5,11 +5,26 @@ class Seq:
 
         self.strbases = strbases
 
+    def complement(self):
+
+        seqcomp = ""
+
+        for n in self.strbases:
+            if n == "A":
+                seqcomp += "T"
+            elif n == "T":
+                seqcomp += "A"
+            elif n == "C":
+                seqcomp += "G"
+            elif n == "G":
+                seqcomp += "C"
+        return seqcomp
 
     def reverse(self):
-        reverse-seq = self.strbases()
 
-    return reverse-seq
+        seqrev = self.strbases()
+
+        return seqrev
 
 
 
