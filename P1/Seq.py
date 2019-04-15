@@ -26,6 +26,7 @@ class Seq:
                 seqcomp += "C"
         return seqcomp
 
+
     def reverse(self):
 
         seqrev = self.strbases[::-1]
@@ -57,7 +58,7 @@ class Seq:
 
                 count_c += 1
 
-        return ["A: ", count_a, "T", count_t, "C", count_c, "G", count_g]
+        return {'A': count_a, 'T': count_t, 'C': count_c, 'G': count_g}
 
     def perc(self):
 
