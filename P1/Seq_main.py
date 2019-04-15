@@ -1,7 +1,7 @@
-from Seq import Seq
+from P1.Seq import Seq
 
-seq_1 = Seq(input("Introduce the first sequence: "))
-seq_2 = Seq(input("Introduce the second sequence: "))
+seq_1 = Seq(input("Introduce the first sequence: ").upper())
+seq_2 = Seq(input("Introduce the second sequence: ").upper())
 seq_3 = Seq(seq_1.complement())
 seq_4 = Seq(seq_3.reverse())
 
@@ -22,7 +22,7 @@ per_2 = seq_2.perc()
 per_3 = seq_3.perc()
 per_4 = seq_4.perc()
 
-print("Sequence 1: ", str1,"\t\n Length: ", len1, "\t\n Bases count: ", count1, "\t\n Bases percentage", per_1)
-print("Sequence 2: ", str2,"\t\n Length: ", len2, "\t\n Bases count: ", count2, "\t\n Bases percentage", per_2)
-print("Sequence 3: ", str3,"\t\n Length: ", len3, "\t\n Bases count: ", count3, "\t\n Bases percentage", per_3)
-print("Sequence 4: ", str4,"\t\n Length: ", len4, "\t\n Bases count: ", count4, "\t\n Bases percentage", per_4)
+print("Sequence 1: ", str1, "\t\n Length: ", len1, "\t\n Bases count: ", count1, "\t\n Bases percentage", per_1)
+print("Sequence 2: ", str2, "\t\n Length: ", len2, "\t\n Bases count: ", count2, "\t\n Bases percentage", per_2)
+print("Sequence 3: ", str3, "\t\n Length: ", len3, "\t\n Bases count: ", count3, "\t\n Bases percentage", per_3)
+print("Sequence 4: ", str4, "\t\n Length: ", len4, "\t\n Bases count: ", count4, "\t\n Bases percentage", per_4)
