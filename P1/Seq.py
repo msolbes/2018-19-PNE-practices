@@ -26,7 +26,6 @@ class Seq:
                 seqcomp += "C"
         return seqcomp
 
-
     def reverse(self):
 
         seqrev = self.strbases[::-1]
