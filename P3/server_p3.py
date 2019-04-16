@@ -116,7 +116,6 @@ def process_client(cs):
 
     # Read client message. Decode it as a string
     msg = cs.recv(2048).decode("utf-8")
-
     message = msg.split("\n")
 
     print("Client's message: ".format(message))
