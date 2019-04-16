@@ -11,10 +11,12 @@ while True:
     sequence = Seq(input("Please enter a valid sequence: ").upper())
     complement_seq = sequence.complement()
     reverse_seq = sequence.reverse()
+    reverse_comp = sequence.reverse_comp()
 
     s.connect((IP, PORT))
     s.send(str.encode("The complement of the sequence is: {}".format(complement_seq)))
     s.send(str.encode("\tThe reverse of the sequence is: {}".format(reverse_seq)))
+    s.send(str.encode("\tThe reverse of the complement sequence is: {}".format(reverse_comp)))
 
     msg = s.recv(2048).decode("utf-8")
     print("\nMessage from the server:")
