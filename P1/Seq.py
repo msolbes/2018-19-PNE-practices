@@ -32,6 +32,23 @@ class Seq:
 
         return seqrev
 
+    def reverse_comp(self):
+
+        seqcomp = ""
+
+        for n in self.strbases:
+            if n == "A":
+                seqcomp += "T"
+            elif n == "T":
+                seqcomp += "A"
+            elif n == "C":
+                seqcomp += "G"
+            elif n == "G":
+                seqcomp += "C"
+        seqcomp = seqcomp[::-1]
+
+        return seqcomp
+
     def count(self):
 
         count_a = 0
