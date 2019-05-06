@@ -1,7 +1,7 @@
 import socket
 import termcolor
 
-IP = "192.168.1.45"
+IP = "192.168.0.33"
 PORT = 8081
 MAX_OPEN_REQUESTS = 5
 
